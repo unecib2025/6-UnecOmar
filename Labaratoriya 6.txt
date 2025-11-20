@@ -1,0 +1,143 @@
+#labaratorniy 6
+
+#6.1
+# a = input()
+# a = a.split()
+# a.append('operator')
+# a.append('admin')
+# a.reverse()
+# print(a)
+
+
+
+#6.2
+# a = ['root', 'securaty']
+# a.insert(0, 'superuser')
+# print(a)
+
+
+#6.3
+# b = input()
+# a = ['bob', 'carlie', 'alice']
+# a.remove(b)
+# print(a)
+
+
+#6.4
+# logs = ['access granted', 'login failed', 'cennection lost']
+# log = logs.pop()
+# print(log)
+# print(logs)
+
+
+#6.5
+# a = ['error', 'ok', 'error', 'ok', 'error']
+# b = a.count('error')
+# print(b)
+
+
+
+#6.6
+# a = ['acces ok', 'breach detected', 'ok', 'breach detected']
+# b = a.index('breach detected')
+# print(b)
+
+
+
+#6.7
+# a = [3, 1, 2, 3, 2, 1]
+# a.sort()
+# print(a)
+
+
+#6.8
+# a = ['2025 10 01', '2025 10 02', '2025 10 03']
+# a.reverse()
+# print(a)
+
+
+
+#6.9
+# a = ['alert', 'spam', 'loin', 'error', 'spam', 'alert']
+# a.remove('spam')
+# a.remove('spam')
+# a.append('END_LOG')
+# a.reverse()
+# b = a.count('alert')
+# print(a)
+# print('kolicestvo "alert"', b)
+
+
+#6.10
+# a = ['192.168.0.1', '192.168.0.3', '192.168.0.4', '192.168.0.2', '92.168.0.5']
+# a.remove('192.168.0.2')
+# a.insert(3, '192.168.0.10')
+# a.sort()
+# b = a.index('192.168.0.10')
+# print(a)
+# print(b)
+
+
+#6.11
+# a = ['ok', 'fail', 'fail', 'ok', 'fail']
+# k_count = a.count('fail')
+# a.remove('fail')
+# a.remove('fail')
+# a.remove('fail')
+# a.append('adit_completed')
+# a.reverse()
+# k_index = a.index('ok')
+# print('kolichestvo fail', k_count)
+# print('perviy index ok', k_index)
+# print(a)
+
+
+#1) append(x) — добавляет элемент в конец списка. insert(i, x) — вставляет элемент в позицию i, сдвигая остальные
+
+#2) pop() без индекса — удаляет и возвращает последний элемент списка
+
+#3) Нет. remove(x) удаляет только первое появление элемента. Чтобы удалить все одинаковые — нужен цикл или списковое выражение.
+
+#4) reverse() переворачивает список на месте, т.е. изменяет сам список.
+
+#5) count(x) — считает, сколько раз встречается элемент x. index(x) — возвращает индекс первого появления x.
+
+#6) Изменяют список (ничего не возвращают):
+
+# append()
+#
+# insert()
+#
+# remove()
+#
+# pop() (возвращает удалённый элемент, но список меняет!)
+#
+# reverse()
+#
+# sort()
+#
+# clear()
+#
+# Возвращают новое значение (список не меняется):
+#
+# count()
+#
+# index()
+#
+# sorted() (в отличие от sort())
+#
+# copy()
+
+#7) будет ошибка : 'ValueError: element is not in list'
+
+#8) Потому что сортировка помогает:
+
+# 1 упорядочить события по времени;
+# 
+# 2  находить повторяющиеся или подозрительные записи;
+# 
+# 3 группировать похожие действия (например, IP-адреса, ошибки, логины);
+# 
+# 4 легче анализировать временные цепочки и логи.
+# 
+# Например: отсортировав список логов по времени, можно увидеть серию атак подряд.
